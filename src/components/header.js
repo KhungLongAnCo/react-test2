@@ -7,7 +7,7 @@ class Header extends Component {
     <ul id="slide-out" className="side-nav hidden custom-scrollbar sn-bg-2 ps ps--theme_default" data-ps-id="c27390a3-9efc-e0d8-197a-ab96d73a156a">
         <li>
             <div className="logo-wrapper waves-light waves-effect waves-light">
-                <a>
+                <a >
                     <img src="http://mdbootstrap.com/img/logo/mdb-transparent.png" className="img-fluid flex-center" />
                 </a>
             </div>

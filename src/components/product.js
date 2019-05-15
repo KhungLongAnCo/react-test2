@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import * as actions from '../actions/index';
 class Product extends Component {
     showRatting(rating) {
         let result = [];
@@ -10,6 +12,7 @@ class Product extends Component {
         }
         return result;
     }
+
     render() {
         let { product } = this.props;
         return (
@@ -40,7 +43,7 @@ class Product extends Component {
                             <span className="left">{product.price} $</span>
                             <span className="right">
                                 <a className="btn-floating blue-gradient" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart">
-                                    <i className="fa fa-shopping-cart"></i>
+                                    <i className="fa fa-shopping-cart" onClick = {() => this.onAddToCart(product)}></i>
                                 </a>
                             </span>
                         </div>
@@ -50,6 +53,10 @@ class Product extends Component {
 
         );
     }
+    onAddToCart = (product) =>{
+        this.props.onAddToCart(product, 1);
+    }
 }
+
 
 export default Product;

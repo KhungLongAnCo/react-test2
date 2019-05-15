@@ -4,7 +4,7 @@ import Header from './components/header';
 import ProductsContainer from './container/productsContainer';
 import Footer from './components/footer';
 import Message from './components/Message';
-import Cart from './components/cart';
+import CartContainer from './container/cartContainer';
 class App extends Component {
     render(){
   return (
@@ -14,7 +14,7 @@ class App extends Component {
         <ProductsContainer />   
         {/* <!-- Footer --> */}
         <Message />
-        <Cart />
+        <CartContainer />
         <Footer />
         </div>
     </div>
