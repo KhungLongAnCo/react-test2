@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/header';
 import ProductsContainer from './container/productsContainer';
 import Footer from './components/footer';
-import Message from './components/Message';
+import MessageContainer from './container/messageContainer';
 import CartContainer from './container/cartContainer';
 class App extends Component {
     render(){
@@ -13,7 +13,7 @@ class App extends Component {
         <Header />
         <ProductsContainer />   
         {/* <!-- Footer --> */}
-        <Message />
+        <MessageContainer />
         <CartContainer />
         <Footer />
         </div>

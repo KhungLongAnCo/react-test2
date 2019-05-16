@@ -10,44 +10,44 @@ class Footer extends Component {
                             <div className="social-section text-md-left">
                                 <ul className="text-center">
                                     <li>
-                                        <a className="btn-floating  btn-fb waves-effect waves-light">
+                                        <span className="btn-floating  btn-fb waves-effect waves-light">
                                             <i className="fa fa-facebook"></i>
-                                        </a>
+                                        </span>
                                     </li>
                                     <li>
-                                        <a className="btn-floating  btn-ins waves-effect waves-light">
+                                        <span className="btn-floating  btn-ins waves-effect waves-light">
                                             <i className="fa fa-instagram"></i>
-                                        </a>
+                                        </span>
                                     </li>
                                     <li>
-                                        <a className="btn-floating  btn-tw waves-effect waves-light">
+                                        <span className="btn-floating  btn-tw waves-effect waves-light">
                                             <i className="fa fa-twitter"></i>
-                                        </a>
+                                        </span>
                                     </li>
                                     <li>
-                                        <a className="btn-floating  btn-yt waves-effect waves-light">
+                                        <span className="btn-floating  btn-yt waves-effect waves-light">
                                             <i className="fa fa-youtube"></i>
-                                        </a>
+                                        </span>
                                     </li>
                                     <li>
-                                        <a className="btn-floating  btn-li waves-effect waves-light">
+                                        <span className="btn-floating  btn-li waves-effect waves-light">
                                             <i className="fa fa-linkedin"></i>
-                                        </a>
+                                        </span>
                                     </li>
                                     <li>
-                                        <a className="btn-floating  btn-dribbble waves-effect waves-light">
+                                        <span className="btn-floating  btn-dribbble waves-effect waves-light">
                                             <i className="fa fa-dribbble left"></i>
-                                        </a>
+                                        </span>
                                     </li>
                                     <li>
-                                        <a className="btn-floating  btn-pin waves-effect waves-light">
+                                        <span className="btn-floating  btn-pin waves-effect waves-light">
                                             <i className="fa fa-pinterest"></i>
-                                        </a>
+                                        </span>
                                     </li>
                                     <li>
-                                        <a className="btn-floating  btn-gplus waves-effect waves-light">
+                                        <span className="btn-floating  btn-gplus waves-effect waves-light">
                                             <i className="fa fa-google-plus"></i>
-                                        </a>
+                                        </span>
                                     </li>
                                 </ul>
                             </div>
@@ -56,16 +56,16 @@ class Footer extends Component {
                             <h5 className="title">Delivery</h5>
                             <ul>
                                 <li>
-                                    <a>Store Delivery</a>
+                                    <span>Store Delivery</span>
                                 </li>
                                 <li>
-                                    <a>Online Delivery</a>
+                                    <span>Online Delivery</span>
                                 </li>
                                 <li>
-                                    <a>Delivery Terms &amp; Conditions</a>
+                                    <span>Delivery Terms &amp; Conditions</span>
                                 </li>
                                 <li>
-                                    <a>Tracking</a>
+                                    <span>Tracking</span>
                                 </li>
                             </ul>
                         </div>
@@ -73,16 +73,16 @@ class Footer extends Component {
                             <h5 className="title">Need help?</h5>
                             <ul>
                                 <li>
-                                    <a>FAQ</a>
+                                    <span>FAQ</span>
                                 </li>
                                 <li>
-                                    <a>Contact Us</a>
+                                    <span>Contact Us</span>
                                 </li>
                                 <li>
-                                    <a>Return Policy</a>
+                                    <span>Return Policy</span>
                                 </li>
                                 <li>
-                                    <a>Product Registration</a>
+                                    <span>Product Registration</span>
                                 </li>
                             </ul>
 
@@ -92,66 +92,66 @@ class Footer extends Component {
                             <ul className="instagram-photos">
                                 <li>
                                     <div className="view overlay hm-white-slight z-depth-1">
-                                        <img className="img-fluid" src="http://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" />
-                                        <a>
+                                        <img alt='' className="img-fluid" src="http://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" />
+                                        <span>
                                             <div className="mask waves-light waves-effect waves-light"></div>
-                                        </a>
+                                        </span>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="view overlay hm-white-slight z-depth-1">
-                                        <img className="img-fluid" src="http://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" />
-                                        <a>
+                                        <img alt='' className="img-fluid" src="http://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" />
+                                        <span>
                                             <div className="mask waves-light waves-effect waves-light"></div>
-                                        </a>
+                                        </span>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="view overlay hm-white-slight z-depth-1">
-                                        <img className="img-fluid" src="http://mdbootstrap.com/img/Photos/Avatars/img%20(19).jpg" />
-                                        <a>
+                                        <img alt='' className="img-fluid" src="http://mdbootstrap.com/img/Photos/Avatars/img%20(19).jpg" />
+                                        <span>
                                             <div className="mask waves-light waves-effect waves-light"></div>
-                                        </a>
+                                        </span>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="view overlay hm-white-slight z-depth-1">
-                                        <img className="img-fluid" src="http://mdbootstrap.com/img/Photos/Avatars/img%20(16).jpg" />
-                                        <a>
+                                        <img alt='' className="img-fluid" src="http://mdbootstrap.com/img/Photos/Avatars/img%20(16).jpg" />
+                                        <span>
                                             <div className="mask waves-light waves-effect waves-light"></div>
-                                        </a>
+                                        </span>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="view overlay hm-white-slight z-depth-1">
-                                        <img className="img-fluid" src="http://mdbootstrap.com/img/Photos/Avatars/img%20(5).jpg" />
-                                        <a>
+                                        <img alt='' className="img-fluid" src="http://mdbootstrap.com/img/Photos/Avatars/img%20(5).jpg" />
+                                        <span>
                                             <div className="mask waves-light waves-effect waves-light"></div>
-                                        </a>
+                                        </span>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="view overlay hm-white-slight z-depth-1">
-                                        <img className="img-fluid" src="http://mdbootstrap.com/img/Photos/Avatars/img%20(18).jpg" />
-                                        <a>
+                                        <img alt='' className="img-fluid" src="http://mdbootstrap.com/img/Photos/Avatars/img%20(18).jpg" />
+                                        <span>
                                             <div className="mask waves-light waves-effect waves-light"></div>
-                                        </a>
+                                        </span>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="view overlay hm-white-slight z-depth-1">
-                                        <img className="img-fluid" src="http://mdbootstrap.com/img/Photos/Avatars/img%20(15).jpg" />
-                                        <a>
+                                        <img alt='' className="img-fluid" src="http://mdbootstrap.com/img/Photos/Avatars/img%20(15).jpg" />
+                                        <span>
                                             <div className="mask waves-light waves-effect waves-light"></div>
-                                        </a>
+                                        </span>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="view overlay hm-white-slight z-depth-1">
-                                        <img className="img-fluid" src="http://mdbootstrap.com/img/Photos/Avatars/img%20(17).jpg" />
-                                        <a>
+                                        <img alt='' className="img-fluid" src="http://mdbootstrap.com/img/Photos/Avatars/img%20(17).jpg" />
+                                        <span>
                                             <div className="mask waves-light waves-effect waves-light"></div>
-                                        </a>
+                                        </span>
                                     </div>
                                 </li>
                             </ul>

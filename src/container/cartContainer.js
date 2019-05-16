@@ -5,6 +5,7 @@ import Cart from '../components/cart';
 import CartResult from '../components/cartResult';
 import PropTypes from 'prop-types';
 import * as Mesage from '../constants/messages';
+import * as actions from '../actions/index';
 
 
 class CartContainer extends Component {
@@ -12,7 +13,10 @@ class CartContainer extends Component {
         let cartItem = Mesage.MSG_CART_EMPTY;
         if (cart.length > 0) {
             cartItem = cart.map((item, index) => {
-                return <CartItem key={index} item={item} />
+                return <CartItem key={index}
+                    item={item}
+                    deleteCartItem={this.props.deleteCartItem}
+                />
             })
         }
         return cartItem;
@@ -29,7 +33,7 @@ class CartContainer extends Component {
         return (
             <div>
                 <Cart>
-                    {this.showItemCart(cart)}
+                    {cart.length > 0 ? this.showItemCart(cart) : null}
                     {this.showTotalPrice(cart)}
                 </Cart>
             </div>
@@ -39,6 +43,13 @@ class CartContainer extends Component {
 const mapStateToProps = (state) => {
     return {
         cart: state.cart
+    }
+}
+const mapDispatchToProps = (dispatch, props) => {
+    return {
+        deleteCartItem: (product) => {
+            dispatch(actions.deleteCartItem(product));
+        }
     }
 }
 
@@ -58,4 +69,4 @@ CartContainer.propTypes = {
     )
 }
 
-export default connect(mapStateToProps, null)(CartContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(CartContainer)

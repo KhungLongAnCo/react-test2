@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
-import * as actions from '../actions/index';
+import * as Message from '../constants/messages';
+
 class Product extends Component {
     showRatting(rating) {
         let result = [];
@@ -19,16 +19,16 @@ class Product extends Component {
             <div className="col-lg-4 col-md-6 mb-r">
                 <div className="card text-center card-cascade narrower">
                     <div className="view overlay hm-white-slight z-depth-1">
-                        <img src={product.image}
+                        <img src={product.image} alt='' 
                             className="img-fluid" />
-                        <a>
+                        <span>
                             <div className="mask waves-light waves-effect waves-light"></div>
-                        </a>
+                        </span>
                     </div>
                     <div className="card-body">
                         <h4 className="card-title">
                             <strong>
-                                <a>{product.name}</a>
+                                <span>{product.name}</span>
                             </strong>
                         </h4>
                         <ul className="rating">
@@ -42,9 +42,9 @@ class Product extends Component {
                         <div className="card-footer">
                             <span className="left">{product.price} $</span>
                             <span className="right">
-                                <a className="btn-floating blue-gradient" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart">
+                                <span className="btn-floating blue-gradient" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart">
                                     <i className="fa fa-shopping-cart" onClick = {() => this.onAddToCart(product)}></i>
-                                </a>
+                                </span>
                             </span>
                         </div>
                     </div>
@@ -55,6 +55,7 @@ class Product extends Component {
     }
     onAddToCart = (product) =>{
         this.props.onAddToCart(product, 1);
+        this.props.UpdateMessage(Message.MSG_UPDATE_TO_CART_SUCCESS);
     }
 }
 

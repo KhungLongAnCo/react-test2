@@ -27,9 +27,6 @@ class CartResult extends Component {
     showTotalPrice = (cart) => {
         let total = 0;
         if (cart.length > 0) {
-        //     total= cart.reduce((x,y) =>{ 
-        //     return (x.product.price*x.quantity) + (y.product.price*y.quantity);
-        //  })
             cart.forEach((item, index)=>{
                 total += (item.product.price * item.quantity);
             }) 
