@@ -19,3 +19,10 @@ export const deleteCartItem = (product) =>{
         product
     }
 }
+export const updateQuantity = (product, quantity) =>{
+    return {
+        type: types.UPDATE_QUANTITY,
+        product,
+        quantity
+    }
+}

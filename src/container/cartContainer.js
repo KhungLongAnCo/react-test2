@@ -16,6 +16,8 @@ class CartContainer extends Component {
                 return <CartItem key={index}
                     item={item}
                     deleteCartItem={this.props.deleteCartItem}
+                    UpdateMessage={this.props.UpdateMessage}
+                    updateQuantity={this.props.updateQuantity}
                 />
             })
         }
@@ -24,7 +26,8 @@ class CartContainer extends Component {
     showTotalPrice = (cart) => {
         let result = null;
         if (cart.length > 0) {
-            result = <CartResult cart={cart} />
+            result = <CartResult cart={cart}
+            />
         }
         return result;
     }
@@ -49,6 +52,12 @@ const mapDispatchToProps = (dispatch, props) => {
     return {
         deleteCartItem: (product) => {
             dispatch(actions.deleteCartItem(product));
+        },
+        UpdateMessage: (message) => {
+            dispatch(actions.UpdateMessage(message));
+        },
+        updateQuantity: (product, quantity) => {
+            dispatch(actions.updateQuantity(product,quantity));
         }
     }
 }

@@ -23,6 +23,15 @@ let myReducer = (state = initialState, action) => {
            state.splice(indexDelete, 1);
            localStorage.setItem('Cart', JSON.stringify(state));
            return [...state];
+        case types.UPDATE_QUANTITY:
+           let indexUpdate = findIndex(state, action.product);
+           if(state[indexUpdate].quantity <= 1){
+            state.splice(indexUpdate, 1);
+           }else{
+            state[indexUpdate].quantity+= action.quantity;
+           }
+           localStorage.setItem('Cart', JSON.stringify(state));
+           return [...state];
         default: return [...state];
     }
 }
